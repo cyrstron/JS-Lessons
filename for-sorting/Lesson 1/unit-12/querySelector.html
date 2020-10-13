@@ -1,0 +1,16 @@
+<div id="greeting" class="message">
+    <span>Hello!</span>
+</div>
+<script>
+    const elem1 = document.querySelector('#greeting');
+
+    console.log(elem1); // <div id='greeting' class="message">...</div>
+    
+    const elem2 = document.querySelector('.message');
+
+    console.log(elem2); // <div id='greeting' class="message">...</div>
+
+    const elem3 = document.querySelector('.message span');
+
+    console.log(elem3); // <span>...</span>
+</script>

@@ -1,0 +1,13 @@
+<div class="greeting">
+    <span class="message">Hello!</span>
+</div>
+<script>
+    const greeting = document.querySelector('.greeting');
+    const message = document.querySelector('.message');
+
+    console.log(greeting.textContent); // Hello!
+    console.log(message.textContent); // Hello!
+
+    message.textContent = 'Hi!';
+    console.log(message.textContent); // Hi!
+</script>

@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <ul class="message-list">
+        <li class="item">
+            <div class="message">Hello!</div>
+        </li>
+        <li class="item">
+            <div class="message">Welcome!</div>
+        </li>
+        <li class="item">
+            <div class="message">Buy!</div>
+        </li>
+    </ul>
+</div>
+<script>
+    const list = document.querySelector('.message-list');
+    const firstLi = document.querySelector('.item');
+    const firstMsg = document.querySelector('.message');
+    
+    console.log(firstLi.matches('.item')); // true
+    console.log(firstLi.matches('.wrapper')); // false
+
+    console.log(firstLi.closest('.item')); // <li class="item">...</li>
+    console.log(firstLi.closest('.wrapper')); // <div class="wrapper">...</div>
+    console.log(firstLi.closest('.message')); // null
+
+    console.log(firstLi.contains(firstMsg)); // true
+    console.log(firstLi.contains(list)); // false
+</script>

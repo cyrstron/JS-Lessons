@@ -1,0 +1,13 @@
+<button class="btn">Click!</button>
+<script>
+    const btn = document.querySelector('.btn');
+
+    function onClick(event) {
+        console.log(event.type); // 'click'
+        console.log(event.target); // <button class="btn">...</button>
+        console.log(event.clientX); // click position x
+        console.log(event.clientY); // click position y
+    }
+
+    btn.addEventListener('click', onClick);
+</script>

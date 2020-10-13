@@ -1,0 +1,22 @@
+<button class="btn">Click!</button>
+<script>
+    const btn = document.querySelector('.btn');
+
+    function onClick1() {
+        alert('click 1');
+    }
+
+    function onClick2() {
+        alert('click 2');
+    }
+
+    btn.addEventListener('click', onClick1);
+    btn.click(); // 'click 1'
+
+    btn.addEventListener('click', onClick2);
+    btn.click(); // 'click 1', 'click 2'
+    
+    btn.removeEventListener('click', onClick1);
+    btn.removeEventListener('click', onClick2);
+    btn.click(); // ...
+</script>

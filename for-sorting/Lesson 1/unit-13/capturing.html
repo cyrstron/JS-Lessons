@@ -1,0 +1,28 @@
+<section>
+    <div>
+        <button>Click!</button>
+    </div>
+</section>
+<script>
+    function onBtnClick() {
+        alert('button!')
+    }
+
+    function onDivClick() {
+        alert('div!')
+    }    
+
+    function onSectionClick() {
+        alert('section!')
+    }
+
+    const btn = document.querySelector('button');
+    const div = document.querySelector('div');
+    const section = document.querySelector('section');
+
+    btn.addEventListener('click', onBtnClick, {capture: true});
+    div.addEventListener('click', onDivClick, {capture: true});
+    section.addEventListener('click', onSectionClick, {capture: true});
+
+    btn.click(); // section! div! button! 
+</script>

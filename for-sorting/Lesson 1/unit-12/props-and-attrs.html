@@ -1,0 +1,13 @@
+<body id="body" lalala="blah!"></body>
+<script>
+    const body = document.body;
+
+    body.currentUser = {
+        name: 'Vasya',
+    };
+
+    console.log(body.currentUser.name); // 'Vasya'
+
+    console.log(body.id); // 'body'
+    console.log(body.lalala); // 'undefined'
+</script>

@@ -1,0 +1,12 @@
+<button class="btn" onclick="onClick()">Click!</button>
+<script>
+    function onClick() {
+        alert('click!');
+    }
+
+    const btn = document.querySelector('.btn');
+
+    btn.onclick = onClick;
+
+    btn.addEventListener('click', onClick);
+</script>

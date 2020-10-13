@@ -1,0 +1,13 @@
+<div class="container"></div>
+<script>
+    const elem = document.querySelector('.container');
+
+    elem.classList.add('active'); // <div class="container active"></div>
+    elem.classList.remove('active'); // <div class="container"></div>
+
+    elem.classList.toggle('open'); // <div class="container open"></div>
+    elem.classList.toggle('open'); // <div class="container"></div>
+
+    elem.classList.contains('open'); // false
+    elem.classList.contains('container'); // true
+</script>

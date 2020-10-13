@@ -1,0 +1,22 @@
+<div class="greeting">
+    <span class="message">Hello!</span>
+</div>
+<script>
+    const greeting = document.querySelector('.greeting');
+    const message = document.querySelector('.message');
+
+    console.log(greeting.innerHTML); // <span class="message">Hello!</span>
+    console.log(message.innerHTML); // Hello!
+
+    message.innerHTML = 'Hi!';
+    console.log(message.innerHTML); // Hi!
+
+    greeting.innerHTML = '<p>Greeting</p>';
+    console.log(greeting.innerHTML); // <p>Greeting</p>
+    
+    greeting.innerHTML = `
+        <script>
+            alert(1);
+        </script>
+    `; // ...
+</script>

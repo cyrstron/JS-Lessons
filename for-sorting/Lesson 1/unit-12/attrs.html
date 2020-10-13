@@ -1,0 +1,13 @@
+<body id="body" lalala="blah!"></body>
+<script>
+    const body = document.body;
+
+    console.log(body.hasAttribute('id')); // true
+    console.log(body.getAttribute('id')); // 'body'
+    
+    console.log(body.setAttribute('lalala', 'hello')); 
+    console.log(body.getAttribute('lalala')); // 'hello'
+
+    console.log(body.removeAttribute('lalala'));
+    console.log(body.getAttribute('lalala')); // null
+</script>
