@@ -9,7 +9,7 @@ function sayHi() {
 sayHi(); // Hi!
 sayHi(); // Hi!
 
-let greeting = 'Hello!';
+const greeting = 'Hello!';
 
 function greet() {
     alert(greeting);
