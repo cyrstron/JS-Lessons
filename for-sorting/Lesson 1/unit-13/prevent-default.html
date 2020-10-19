@@ -1,0 +1,19 @@
+<a href="www.google.com" id='link-1'>Just google it!</a>
+<a href="www.google.com" id='link-2' onclick="return false;">
+    Just google it!
+</a>
+<a href="www.google.com" id='link-3'>Just google it!</a>
+<a href="www.google.com" id='link-4'>Just google it!</a>
+<script>
+    const link3 = document.getElementById('link-3');
+    const link4 = document.getElementById('link-4');
+
+    function onClick(event) {
+        event.preventDefault();
+
+        console.log(event.target.id);
+    }
+
+    link3.onclick = onClick;
+    link4.addEventListener('click', onClick);
+</script>

@@ -1,0 +1,12 @@
+<script>
+    const div = document.getElementById('greeting'); // null
+
+    console.log(div); // null
+
+    window.addEventListener('load', () => {
+        const div = document.getElementById('greeting'); 
+        
+        console.log(div); // <div id="greeting">...</div>
+    });
+</script>
+<div id="greeting">Hello!</div>
