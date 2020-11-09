@@ -38,7 +38,7 @@ function petCat() {
     let message;
 
     const doesGiveMilk = confirm('А молока нальёшь?');
-    const doesGiveSausage = confirm('А молока нальёшь?');
+    const doesGiveSausage = confirm('А сосиску дашь?');
 
     if (doesGiveMilk) {
         if (doesGiveSausage) {
@@ -64,7 +64,7 @@ function petCat() {
     if (!doesWantPet) return 'Ну лан :С';
 
     const doesGiveMilk = confirm('А молока нальёшь?');
-    const doesGiveSausage = confirm('А молока нальёшь?');
+    const doesGiveSausage = confirm('А сосику дашь?');
 
     if (!doesGiveSausage) return 'И какой с тебя толк?';
 

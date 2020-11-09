@@ -23,6 +23,8 @@ function greetLocal() {
 
 console.log(localGreeting); // Error!
 
+let greeting = 'Hello!';
+
 function greetReassign() {
     greeting = 'Ola!';
 
@@ -34,7 +36,7 @@ greetReassign(); // Ola!
 console.log(greeting); // 'Ola!'
 
 function greetAssign() {
-    const greeting = 'Guten Tag!';
+    let greeting = 'Guten Tag!';
 
     alert(greeting);
 
