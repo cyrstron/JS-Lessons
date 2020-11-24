@@ -22,5 +22,5 @@ if ('nickname' in user) {
 const key = 'name';
 
 if (key in user) {
-    console.log(user.nickname); // 'Vasya'
+    console.log(user.name); // 'Vasya'
 }

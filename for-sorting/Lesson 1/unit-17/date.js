@@ -13,3 +13,7 @@ const srtDate = new Date("2017-01-26");
 
 // Sat Jan 01 2011 02:03:04 GMT+0200
 const numsDate = new Date(2011, 0, 1, 2, 3, 4, 567);
+
+// Sat Jan 01 2011 00:00:00 GMT+0200
+const numsDate = new Date(2011, 0, 1);
+

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
 <style>
     .container {
         width: 200px;
@@ -30,15 +37,21 @@
         background-color: teal;
     }
 </style>
+</head>
+<body>
+    
 <div class="container">
-    <button class="child" data-index="1">1</button>
+    <header>Hello</header>
+    <button class="child" data-index="1"><span>1</span></button>
     <button class="child" data-index="2">2</button>
     <button class="child" data-index="3">3</button>
     <button class="child" data-index="4">4</button>
 </div>
 <script>
     function onContainerClick(e) {
-        const child = e.target.closest('.child');
+        const target = e.target;
+        
+        const child = target.closest('.child');
 
         if (!child) return;
 
@@ -60,3 +73,5 @@
     btn3.click(); // 3
     btn4.click(); // 4
 </script>
+</body>
+</html>

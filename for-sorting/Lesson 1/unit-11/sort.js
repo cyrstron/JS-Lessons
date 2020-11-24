@@ -6,7 +6,7 @@ const result = array1.sort((a, b) => {
 
 console.log(array1); // [1, 2, 3, 4, 5]
 console.log(result); // [1, 2, 3, 4, 5]
-console.log(array1 === result); // [1, 2, 3, 4, 5]
+console.log(array1 === result); // true
 
 const array2 = [1, 5, 9, 10, 15];
 
