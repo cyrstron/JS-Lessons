@@ -25,6 +25,6 @@ console.log(map.size); // 0
 
 const map2 = new Map([['a', 1], ['b', 2], ['c', 3]]);
 
-const keys = map.keys(); // ['a', 'b', 'c']
-const values = map.values(); // [1, 2, 3]
-const entries = map.entries(); // [['a', 1], ['b', 2], ['c', 3]]
+const keys = map.keys(); // {'a', 'b', 'c'}
+const values = map.values(); // {1, 2, 3}
+const entries = map.entries(); // {'a' => 1, 'b' => 2], 'c' => 3}
