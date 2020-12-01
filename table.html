@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+
+        const container2 = document.querySelector('#container');
+
+        const liSecond = document.querySelectorAll('li.second');
+
+        const liThird = document.querySelector('ol li.third');
+
+        const header = document.querySelector('.header');
+        header.textContent = 'Hello!';
+
+        const footer = document.querySelector('.footer');
+        footer.classList.add('main');
+        footer.classList.remove('main');
+
+        const newLi = document.createElement('li');
+        newLi.textContent = 'four';
+        const ul = document.querySelector('ul');
+        ul.append(newLi);
+
+        const allLiOl = document.querySelectorAll('ol li');
+
+        allLiOl.forEach(elem => {
+            elem.style.background = 'green';
+        })
+
+        footer.remove();
+
+
+        console.log(container);
+        console.log(container2);
+        console.log(liSecond);
+        console.log(liThird);
+        console.log(allLiOl);
+    </script>
+</body>
+</html>
