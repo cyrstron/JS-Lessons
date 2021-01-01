@@ -3,7 +3,7 @@ const func1 = () => {
 }
 
 const func2 = (...args) => {
-    console.log(arguments);
+    console.log(args);
 }
 
 func2('a', 'b', 'c'); // ['a', 'b', 'c']

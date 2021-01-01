@@ -2,7 +2,7 @@ const user = {
     firstName: 'Vanya',
     lastName: 'Ivanov',
     get title() {
-        return `${this.firstName} ${Ivanov}`;
+        return `${this.firstName} ${this.lastName}`;
     },
     set title(value) {
         const [firstName, lastName] = value.split(' ');

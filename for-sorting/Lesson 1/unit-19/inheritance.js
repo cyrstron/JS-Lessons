@@ -31,6 +31,10 @@ class UserNew {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    sayHi() {
+        console.log(`Hi, I'm ${this.firstName}!`);
+    }
 }
 
 class EmployeeNew extends UserNew {
