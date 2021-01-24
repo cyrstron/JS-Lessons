@@ -23,7 +23,7 @@ const CountdownBtn = () => {
 
     return (
         <div>
-            <Warning message={count === 0 && 'LAST CLICK LEFT!'} />
+            <Warning message={count === 1 && 'LAST CLICK LEFT!'} />
             <button onClick={onClick}>
                 Clicks left: {count}
             </button>

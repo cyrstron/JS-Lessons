@@ -17,7 +17,7 @@ const UserForm = () => {
         
         setFirstName('');
         setLastName('');
-    }, [setFirstName, setLastName])
+    }, [setFirstName, setLastName]);
 
     const onSubmit = useCallback((e) => {
         e.preventDefault();

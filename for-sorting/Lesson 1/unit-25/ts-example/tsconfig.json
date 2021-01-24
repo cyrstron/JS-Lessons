@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist",
+        "module": "ESNext",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+    },
+    "include": ["./src/**/*"],
+    "exclude": [
+        "node_modules", 
+        "dist"
+    ]
+}
